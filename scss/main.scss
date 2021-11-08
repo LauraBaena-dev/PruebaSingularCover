@@ -1,0 +1,20 @@
+////// FONTS //////
+
+$font-standard: 'Manrope';
+$font-special: 'Lora';
+
+////// COLORS //////
+
+$black:#000000;
+$black2:#020202;
+$white:#FFFFFF;
+$grey:#E5E5E5;
+$blue:#0063F5;
+
+body{
+    font-family: $font-standard;
+}
+
+h1{
+    font-family: $font-special;
+}
