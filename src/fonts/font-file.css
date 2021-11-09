@@ -22,3 +22,74 @@
     font-style: normal;
     font-display: swap;
 }
+/*ICONS*/
+@font-face {
+  font-family: 'singularCovers';
+  src:  url('singularCovers.eot?c39blp');
+  src:  url('singularCovers.eot?c39blp#iefix') format('embedded-opentype'),
+    url('singularCovers.ttf?c39blp') format('truetype'),
+    url('singularCovers.woff?c39blp') format('woff'),
+    url('singularCovers.svg?c39blp#singularCovers') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'singularCovers' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-travel:before {
+  content: "\e900";
+}
+.icon-search:before {
+  content: "\e901";
+}
+.icon-star:before {
+  content: "\e902";
+}
+.icon-image:before {
+  content: "\e903";
+}
+.icon-file:before {
+  content: "\e906";
+}
+.icon-financial:before {
+  content: "\e90c";
+}
+.icon-health:before {
+  content: "\e907";
+}
+.icon-music:before {
+  content: "\e910";
+}
+.icon-science:before {
+  content: "\e90b";
+}
+.icon-social:before {
+  content: "\e90a";
+}
+.icon-sport:before {
+  content: "\e905";
+}
+.icon-tech:before {
+  content: "\e908";
+}
+.icon-videogames:before {
+  content: "\e909";
+}
+.icon-cinema:before {
+  content: "\e904";
+}
+
