@@ -39,6 +39,9 @@ $blue2:#007EF7;
 $blue-form: #E5E5E5;
 
 //GENERAL
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-size: $font-mobile;
     font-family: $font-standard;
@@ -734,6 +737,10 @@ section.third {
             text-align: center;
             padding-top: 160px;
             padding-bottom: 141px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 1233px;
+            margin: auto;
             .title{
                 max-width: 640px;
                 margin: auto;
@@ -742,11 +749,13 @@ section.third {
                 }
             }
             .col-list{
-                display: grid;
+                /*display: grid;*/
                 justify-content: center;
                 grid-template-columns: repeat(10, minmax(0, 110px));
                 grid-gap: 14px;
+                display: flex;
                 .list-item{
+                    max-width: calc(110px - 18px);
                     grid-column: span 1;
                     margin: 0px;
                     width: auto;
@@ -760,6 +769,12 @@ section.third {
                             padding: 0px;
                         }
                     }
+                }
+                //animacio JS
+                animation: slider 10s infinite linear;
+                @keyframes slider {
+                    0% { transform: translateX(0%); }
+                    100% { transform: translateX(-50%); }
                 }
             }
         }
