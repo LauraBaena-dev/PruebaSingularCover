@@ -3,13 +3,15 @@ body {
   font-size: 16px;
   font-family: "Manrope";
   padding: 0px;
-  padding-top: 40px;
-  padding-bottom: 22px;
-  background-color: #000000;
+  background-color: #FFFFFF;
   font-weight: 400;
   margin: 0px;
   color: #FFFFFF;
   line-height: 22px;
+}
+
+.global-bg-black {
+  background-color: #000000;
 }
 
 .not-mobile {
@@ -75,7 +77,9 @@ header ul {
 header .col-info {
   padding-left: 16px;
   padding-right: 16px;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
+  padding-top: 40px;
+  background-color: #000000;
 }
 header .col-info .main-menu {
   font-size: 14px;
@@ -258,26 +262,20 @@ section.first .third-row .box {
   border-radius: 12px;
 }
 section.first .third-row .col-list {
-  display: flex;
-  flex-direction: row;
+  display: grid;
   justify-content: flex-start;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 12px;
 }
 section.first .third-row .col-list .list-item {
-  width: calc(50% - 30px);
-  margin-left: 0px;
-  margin-right: 6px;
   margin-bottom: 12px;
-}
-section.first .third-row .col-list .list-item:nth-of-type(even) {
-  margin-left: 6px;
-  margin-right: 0px;
 }
 section.first .third-row .col-list .list-item .list-item-title {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
 }
 section.first .third-row .col-list .list-item .list-item-title span {
   color: #231F20;
@@ -295,6 +293,7 @@ section.second {
   padding-top: 60px;
   padding-left: 16px;
   padding-right: 16px;
+  background-color: #000000;
 }
 section.second .title {
   margin-bottom: 12px;
@@ -304,24 +303,21 @@ section.second .title ~ p {
   margin-bottom: 24px;
 }
 section.second .plans {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7px;
+  max-width: 816px;
+  margin: auto;
 }
 section.second .plans .plan {
   border: 1px solid #303030;
   box-sizing: border-box;
-  margin-right: 7px;
-  margin-left: 0px;
-  width: calc(50% - 7px);
   transition: all 0.3s linear;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 16px 12px;
-}
-section.second .plans .plan:nth-of-type(even) {
-  margin-left: 7px;
-  margin-right: 0px;
 }
 section.second .plans .plan h3 {
   font-weight: 700;
@@ -391,14 +387,18 @@ section.second .plans .plan:hover ul {
 }
 
 section.third {
+  padding-bottom: 22px;
+}
+section.third .bg {
   background-color: #0063F5;
   margin-left: 16px;
   margin-right: 32px;
   margin-top: 141px;
   padding: 49px 16px;
   position: relative;
+  transform-style: preserve-3d;
 }
-section.third::before {
+section.third .bg::before {
   position: absolute;
   display: block;
   content: "";
@@ -411,7 +411,7 @@ section.third::before {
   top: 0px;
   left: 0px;
 }
-section.third::after {
+section.third .bg::after {
   position: absolute;
   display: block;
   content: "";
@@ -420,9 +420,9 @@ section.third::after {
   top: 6px;
   left: 6px;
   border: 1px solid #0063F5;
-  z-index: -1;
+  transform: translateZ(-1px);
 }
-section.third h2 {
+section.third .bg h2 {
   font-size: 32px;
   line-height: 44px;
   width: 69vw;
@@ -482,22 +482,23 @@ section.third h2 {
     display: block;
     z-index: -1;
     top: 0px;
-    left: 50%;
+    left: -50%;
     width: 50vw;
     height: calc(100% + 1px);
-    background-color: #FFFFFF;
+    background-color: #000000;
   }
   header .row {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(13, 1fr);
     grid-gap: 0px;
   }
   header .row .col-info {
-    grid-column: span 7;
+    grid-column: span 8;
     padding-left: 106px;
     padding-right: 24px;
     padding-bottom: 148px;
+    padding-top: 0px;
     margin-bottom: 0px;
     background-color: #000000;
   }
@@ -512,9 +513,10 @@ section.third h2 {
     opacity: 0.5;
     transition: all 0.3s linear;
   }
-  header .row .col-info .main-menu .not-mobile a:hover {
+  header .row .col-info .main-menu .not-mobile a:hover, header .row .col-info .main-menu .not-mobile a:active {
     color: #0063F5;
     opacity: 1;
+    cursor: pointer;
   }
   header .row .col-info .list-header {
     margin-top: 24px;
@@ -586,7 +588,7 @@ section.third h2 {
 
   section.first {
     position: relative;
-    padding-top: 120px;
+    padding-top: 0px;
     padding-left: 104px;
     padding-right: 104px;
   }
@@ -600,7 +602,8 @@ section.third h2 {
     grid-gap: 0px;
   }
   section.first .first-row {
-    padding-bottom: 100px;
+    padding-top: 120px;
+    padding-bottom: 0px;
   }
   section.first .first-row .title ~ p {
     max-width: 504px;
@@ -609,13 +612,46 @@ section.third h2 {
     grid-column: span 7;
   }
   section.first .first-row .col-img {
-    grid-column: span 6;
+    grid-column: span 4;
+    width: 100%;
+    max-width: none;
+    justify-content: space-between;
+    padding-left: 100px;
+  }
+  section.first .first-row .logos .razon-logo {
+    bottom: 48%;
+    right: unset;
+    left: 347px;
+  }
+  section.first .first-row .logos .abc-logo {
+    bottom: 14%;
+    left: -21px;
+  }
+  section.first .first-row .logos .vanguardia-logo {
+    right: unset;
+    left: -77px;
+    bottom: 33%;
+  }
+  section.first .first-row .logos .mundo-logo {
+    left: 393px;
+    bottom: 27%;
+    padding: 27px 7px;
+  }
+  section.first .first-row .logos .pais-logo {
+    bottom: 50%;
+    left: 0%;
+  }
+  section.first .first-row .logos .confidencial-logo {
+    padding: 22px 9px;
+    bottom: 9%;
+    left: 364px;
   }
   section.first .second-row {
-    padding-bottom: 160px;
+    padding-top: 100px;
+    padding-bottom: 0px;
   }
   section.first .second-row .col-text {
-    grid-column: span 6;
+    grid-column: span 7;
     order: 2;
   }
   section.first .second-row .col-text .title {
@@ -625,11 +661,30 @@ section.third h2 {
     max-width: 443px;
   }
   section.first .second-row .col-img {
-    grid-column: span 7;
-    order: 1;
+    grid-column: span 6;
+    width: 100%;
+    max-width: none;
+    justify-content: space-between;
+  }
+  section.first .second-row .logos .instagram-logo {
+    padding: 10px 30px;
+    bottom: 4%;
+    right: unset;
+    left: 364px;
+  }
+  section.first .second-row .logos .twitter-logo {
+    bottom: 23%;
+    left: 272px;
+  }
+  section.first .second-row .logos .youtube-logo {
+    padding: 0px 22px;
+    left: 339px;
+    bottom: 41%;
   }
   section.first .third-row {
     text-align: center;
+    padding-top: 160px;
+    padding-bottom: 141px;
   }
   section.first .third-row .title {
     max-width: 640px;
@@ -641,18 +696,165 @@ section.third h2 {
   section.first .third-row .col-list {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(10, minmax(0, 110px));
     grid-gap: 14px;
   }
   section.first .third-row .col-list .list-item {
     grid-column: span 1;
     margin: 0px;
     width: auto;
+    padding: 16px 9px;
   }
   section.first .third-row .col-list .list-item .list-item-title {
     display: inline-block;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(2, 2, 2, 0.1);
+    margin-bottom: 27px;
   }
   section.first .third-row .col-list .list-item .list-item-title span {
     padding: 0px;
+  }
+
+  section.second {
+    padding-top: 120px;
+    padding-left: 104px;
+    padding-right: 104px;
+    text-align: center;
+  }
+  section.second .title {
+    margin-bottom: 0px;
+  }
+  section.second .title ~ p {
+    max-width: 506px;
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 64px;
+  }
+  section.second .plans {
+    max-width: 816px;
+    margin: auto;
+    text-align: start;
+  }
+  section.second .plans .plan {
+    padding: 32px 20px;
+    padding-bottom: 24px;
+  }
+  section.second .plans .plan h3 {
+    font-size: 32px;
+    line-height: 46px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  section.second .plans .plan h3 ~ p:not(.price) {
+    max-width: 320px;
+    margin-top: 0px;
+    margin-bottom: 11px;
+    font-size: 16px;
+    opacity: 0.6;
+  }
+  section.second .plans .plan .price {
+    margin-top: 0px;
+    margin-bottom: 28px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  section.second .plans .plan .price span {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  section.second .plans .plan ul {
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-bottom: 11px;
+  }
+  section.second .plans .plan .button-kleo {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  section.third {
+    padding: 0px 104px;
+    padding-bottom: 44px;
+  }
+  section.third .bg {
+    margin: auto;
+    margin-top: 120px;
+    max-width: 1232px;
+    padding-left: 40px;
+    padding-top: 60px;
+    background-color: #007EF7;
+  }
+  section.third .bg::before {
+    background-image: url("../images/lastsection-desktop-kleo.png");
+    background-size: auto 100%;
+    background-position: right;
+    z-index: -1;
+  }
+  section.third .bg::after {
+    top: 20px;
+    left: 20px;
+  }
+  section.third .bg h2 {
+    max-width: 764px;
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 11px;
+  }
+  section.third .bg .not-mobile form {
+    display: flex;
+  }
+  section.third .bg .not-mobile form label {
+    visibility: hidden;
+    position: absolute;
+    left: -99999999px;
+  }
+  section.third .bg .not-mobile form input[type=text] {
+    background-color: rgba(229, 229, 229, 0.67);
+    border: transparent;
+    padding: 17px;
+    color: #0063F5;
+    min-width: 312px;
+    transition: all 0.3s linear;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  section.third .bg .not-mobile form input[type=text]::placeholder {
+    color: #0063F5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  section.third .bg .not-mobile form input[type=text]:focus-visible {
+    outline: #0063F5;
+    background: #FFFFFF;
+  }
+  section.third .bg .not-mobile form .button-kleo {
+    display: inline-block;
+    padding: 14px;
+  }
+  section.third .bg .not-mobile form .button-kleo:hover {
+    cursor: pointer;
+  }
+  section.third .bg .not-mobile p {
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 0px;
+    margin-bottom: 23px;
+    font-size: 16px;
+  }
+
+  footer {
+    background-color: #000000;
+    padding: 0px 104px;
+    padding-bottom: 48px;
+  }
+  footer p {
+    margin: auto;
+    max-width: 1288px;
+    font-size: 16px;
+    opacity: 0.6;
+    color: #E5E5E5;
   }
 }

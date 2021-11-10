@@ -7,7 +7,6 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <script src='src/js/scripts.js'></script>
-    <!--<script src='src/js/bootstrap.js'></script>-->
 </head>
 <body>
     <header class="container-sc">
@@ -20,11 +19,11 @@
                                 <a href="#" class="logo">KLEO</a>
                             </h1>
                         </li>
-                        <li class="not-mobile"><a href="#">Periodicos</a></li>
-                        <li class="not-mobile"><a href="#">Redes Sociales</a></li>
-                        <li class="not-mobile"><a href="#">Categorias</a></li>
-                        <li class="not-mobile"><a href="#">Suscripcion</a></li>
-                        <li><a href="#" class="button-kleo">Me interesa</a></li>
+                        <li class="not-mobile"><a href="#periodicos">Periodicos</a></li>
+                        <li class="not-mobile"><a href="#redes">Redes Sociales</a></li>
+                        <li class="not-mobile"><a href="#categorias">Categorias</a></li>
+                        <li class="not-mobile"><a href="#suscripcion">Suscripcion</a></li>
+                        <li><a href="#" class="button-kleo">Me interesa</a></li> <!--no se donde deberia llevar-->
                     </ul>
                 </nav>
                 <h2 class="big-title">Existe una mejor manera de estar informado</h2>
@@ -97,7 +96,7 @@
     </header>
     <section class="first">
         <div class="container-sc">
-            <div class="first-row">
+            <div class="first-row" id="periodicos">
                 <div class="col-text">
                     <h2 class="title">Una sola noticia, diferentes puntos de vista</h2>
                     <p>Lo que están diciendo los periódicos sobre la misma noticia, en una pantalla.</p>
@@ -132,7 +131,7 @@
                     </div>
                 </div>
             </div>
-            <div class="second-row">
+            <div class="second-row" id="redes">
                 <div class="col-text">
                     <h2 class="title">Navega entre el contenido digital sobre lo ocurrido</h2>
                     <p>Videos, posts y opiniones que han surgido en las redes a raíz de la noticia.</p>
@@ -155,19 +154,24 @@
                     </div>
                 </div>
             </div>
-            <div class="third-row">
-                <div class="col-12">
+            <div class="third-row" id="categorias">
+                <div>
                     <h2 class="title">Elige los temas que más te interesan</h2>
                     <p>Infórmate con publicaciones especializadas y generalistas sobre tus temas favoritos.</p>
                 </div>
-                <div class="col-12 col-list">
+                <div class="col-list">
                     <div class="list-item box">
                         <div class="list-item-title">
                             <span class="icon-financial"></span>
                             <h3>Financiero</h3>
                         </div>
                         <div class="list-content not-mobile">
-    
+                            <img src="images/logosPrensa/financiero/forbes-kleo.png" alt="Forbes">
+                            <img src="images/logosPrensa/financiero/eleconomista-kleo.png" alt="ElEconomista">
+                            <img src="images/logosPrensa/financiero/expansion-kleo.png" alt="Expansión">
+                            <img src="images/logosPrensa/financiero/cincodias-kleo.png" alt="Cinco dias">
+                            <img src="images/logosPrensa/financiero/capital-kleo.png" alt="Capital">
+                            <img src="images/logosPrensa/financiero/inversion-kleo.png" alt="Inversion">
                         </div>
                     </div>
                     <div class="list-item box">
@@ -176,7 +180,11 @@
                             <h3>Ciencia</h3>
                         </div>
                         <div class="list-content not-mobile">
-    
+                            <img src="images/logosPrensa/ciencia/quo-kleo.png" alt="QUO">
+                            <img src="images/logosPrensa/ciencia/muyinteresante-kleo.png" alt="Muy Interesante">
+                            <img src="images/logosPrensa/ciencia/nationalgeographic-kleo.png" alt="National Geographic">
+                            <img src="images/logosPrensa/ciencia/investigacionyciencia-kleo.png" alt="Investigacion y ciencia">
+                            <img src="images/logosPrensa/ciencia/nature-kleo.png" alt="Nature">
                         </div>
                     </div>
                     <div class="list-item box">
@@ -185,7 +193,12 @@
                             <h3>Social</h3>
                         </div>
                         <div class="list-content not-mobile">
-    
+                            <img src="images/logosPrensa/social/time-kleo.png" alt="Time">
+                            <img src="images/logosPrensa/social/telva-kleo.png" alt="Telva">
+                            <img src="images/logosPrensa/social/glamour-kleo.png" alt="Glamour">
+                            <img src="images/logosPrensa/social/hola-kleo.png" alt="Hola">
+                            <img src="images/logosPrensa/social/lecturas-kleo.png" alt="Lecturas">
+                            <img src="images/logosPrensa/social/vogue-kleo.png" alt="Vogue">
                         </div>
                     </div>
                     <div class="list-item box">
@@ -194,7 +207,12 @@
                             <h3>Videojuegos</h3>
                         </div>
                         <div class="list-content not-mobile">
-    
+                            <img src="images/logosPrensa/videojuegos/edge-kleo.png" alt="Edge">
+                            <img src="images/logosPrensa/videojuegos/hobby-kleo.png" alt="Hobby">
+                            <img src="images/logosPrensa/videojuegos/gamereport-kleo.png" alt="Game Report">
+                            <img src="images/logosPrensa/videojuegos/gtm-kleo.png" alt="GTM">
+                            <img src="images/logosPrensa/videojuegos/nintendo-kleo.png" alt="Nintendo">
+                            <img src="images/logosPrensa/videojuegos/pcgamer-kleo.png" alt="PC Gamer">
                         </div>
                     </div>
                     <div class="list-item box">
@@ -203,7 +221,10 @@
                             <h3>Tecnologia</h3>
                         </div>
                         <div class="list-content not-mobile">
-    
+                            <img src="images/logosPrensa/tecnologia/alaka-kleo.png" alt="Alaka">
+                            <img src="images/logosPrensa/tecnologia/byte-kleo.png" alt="Byte">
+                            <img src="images/logosPrensa/tecnologia/mit-kleo.png" alt="MIT Technology Reviw">
+                            <img src="images/logosPrensa/tecnologia/cnet-kleo.png" alt="C Net">
                         </div>
                     </div>
                     <div class="list-item box">
@@ -212,7 +233,11 @@
                             <h3>Salud</h3>
                         </div>
                         <div class="list-content not-mobile">
-    
+                            <img src="images/logosPrensa/salud/mujerysalud-kleo.png" alt="Mujer y Salud">
+                            <img src="images/logosPrensa/salud/mentesana-kleo.png" alt="Mente Sana">
+                            <img src="images/logosPrensa/salud/cuerpomente-kleo.png" alt="Cuerpo Mente">
+                            <img src="images/logosPrensa/salud/efesalud-kleo.png" alt="E.F.E Salud">
+                            <img src="images/logosPrensa/salud/vitonica-kleo.png" alt="Vitonica">
                         </div>
                     </div>
                     <div class="list-item box">
@@ -221,7 +246,11 @@
                             <h3>Deportes</h3>
                         </div>
                         <div class="list-content not-mobile">
-    
+                            <img src="images/logosPrensa/deportes/fitness-kleo.png" alt="Fitness">
+                            <img src="images/logosPrensa/deportes/womenshealth-kleo.png" alt="Women's Health">
+                            <img src="images/logosPrensa/deportes/menshealth-kleo.png" alt="Men's Health">
+                            <img src="images/logosPrensa/deportes/trainer-kleo.png" alt="Trainer">
+                            <img src="images/logosPrensa/deportes/yoga-kleo.png" alt="Yoga">
                         </div>
                     </div>
                     <div class="list-item box">
@@ -230,7 +259,10 @@
                             <h3>Cine</h3>
                         </div>
                         <div class="list-content not-mobile">
-    
+                            <img src="images/logosPrensa/cine/cinemania-kleo.png" alt="Cinemania">
+                            <img src="images/logosPrensa/cine/fotogramas-kleo.png" alt="Fotogramas">
+                            <img src="images/logosPrensa/cine/accion-kleo.png" alt="Accion">
+                            <img src="images/logosPrensa/cine/premiere-kleo.png" alt="Premiere">
                         </div>
                     </div>
                     <div class="list-item box">
@@ -239,7 +271,11 @@
                             <h3>Música</h3>
                         </div>
                         <div class="list-content not-mobile">
-    
+                            <img src="images/logosPrensa/musica/rollingstons-kleo.png" alt="Rolling Stons">
+                            <img src="images/logosPrensa/musica/esquire-kleo.png" alt="Esquire">
+                            <img src="images/logosPrensa/musica/mondo-kleo.png" alt="Mondo Sonoro">
+                            <img src="images/logosPrensa/musica/rockdelux-kleo.png" alt="Rock Delux">
+                            <img src="images/logosPrensa/musica/scherzo-kleo.png" alt="Scherzo">
                         </div>
                     </div>
                     <div class="list-item box">
@@ -248,67 +284,76 @@
                             <h3>Viajes</h3>
                         </div>
                         <div class="list-content not-mobile">
-    
+                            <img src="images/logosPrensa/viajes/viajar-kleo.png" alt="Viajar">
+                            <img src="images/logosPrensa/viajes/ngtraveler-kleo.png" alt="Nationa Geographic Traveler">
+                            <img src="images/logosPrensa/viajes/traveler-kleo.png" alt="Traveler">
+                            <img src="images/logosPrensa/viajes/lonely-kleo.png" alt="Lonely Planet">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="second container-sc">
-        <h2 class="title">Elige tu plan</h2>
-        <p>Elige tu plan. Deja de preocuparte por buscar la información, nosotros te la traemos.</p>
-        <div class="plans">
-            <div class="plan">
-                <div>
-                    <h3>Gratuito</h3>
-                    <p class="not-mobile">Accede gratuitamente a la información relevante sobre lo que está ocurriendo.</p>
-                    <p class="price"><span>0€</span>al mes</p>
-                    <ul>
-                        <li><p>Accede a <span>3 medios informativos</span></p></li>
-                        <li><p>Lee los <span>50 tuits mas relevantes</span></p></li>
-                        <li><p>Visualiza <span>50 imágenes y vídeos relacionados</span></p></li>
-                    </ul>
+    <section class="global-bg-black">
+        <section class="second container-sc" id="suscripcion">
+            <h2 class="title">Elige tu plan</h2>
+            <p>Elige tu plan. Deja de preocuparte por buscar la información, nosotros te la traemos.</p>
+            <div class="plans">
+                <div class="plan">
+                    <div>
+                        <h3>Gratuito</h3>
+                        <p class="not-mobile">Accede gratuitamente a la información relevante sobre lo que está ocurriendo.</p>
+                        <p class="price"><span>0€</span>al mes</p>
+                        <ul>
+                            <li><p>Accede a <span>3 medios informativos</span></p></li>
+                            <li><p>Lee los <span>50 tuits mas relevantes</span></p></li>
+                            <li><p>Visualiza <span>50 imágenes y vídeos relacionados</span></p></li>
+                        </ul>
+                    </div>
+                    <div class="to-bottom">
+                        <a href="#" class="button-kleo">
+                            <span class="not-mobile">Elijo la versión gratuita</span>
+                            <span class="in-mobile">Me interesa</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="to-bottom">
-                    <a href="#" class="button-kleo">
-                        <span class="not-mobile">Elijo la versión gratuita</span>
-                        <span class="in-mobile">Me interesa</span>
-                    </a>
+                <div class="plan">
+                    <div>
+                        <h3>Premium</h3>
+                        <p class="not-mobile">Accede a toda la información relevante, contenido digital y de actualidad en RRSS.</p>
+                        <p class="price"><span>2,99€</span>al mes</p>
+                        <ul>
+                            <li><p>Accede a <span>todos los medios informativos</span></p></li>
+                            <li><p>Lee <span>todos los tuits relacionados</span></p></li>
+                            <li><p>Visualiza <span>todas imágenes  y vídeos relacionados</span></p></li>
+                            <li><p>Accede a <span>medios especializados:</span> fitness,  viajes,  gastronomía, etc</p></li>
+                            <li><p>Disfruta de <span>artículos en detalle</span></p></li>
+                        </ul>
+                    </div>
+                    <div class="to-bottom">
+                        <a href="#" class="button-kleo">
+                            <span class="not-mobile">Elijo la versión premium</span>
+                            <span class="in-mobile">Me interesa</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="plan">
-                <div>
-                    <h3>Premium</h3>
-                    <p class="not-mobile">Accede a toda la información relevante, contenido digital y de actualidad en RRSS.</p>
-                    <p class="price"><span>2,99€</span>al mes</p>
-                    <ul>
-                        <li><p>Accede a <span>todos los medios informativos</span></p></li>
-                        <li><p>Lee <span>todos los tuits relacionados</span></p></li>
-                        <li><p>Visualiza <span>todas imágenes  y vídeos relacionados</span></p></li>
-                        <li><p>Accede a <span>medios especializados:</span> fitness,  viajes,  gastronomía, etc</p></li>
-                        <li><p>Disfruta de <span>artículos en detalle</span></p></li>
-                    </ul>
-                </div>
-                <div class="to-bottom">
-                    <a href="#" class="button-kleo">
-                        <span class="not-mobile">Elijo la versión premium</span>
-                        <span class="in-mobile">Me interesa</span>
-                    </a>
+        </section>
+        <section class="third container-sc">
+            <div class="bg">
+                <h2>Creemos en la información libre. Por eso lanzamos KLEO, para que nadie pueda hacer uso de ella para sus propios fines. ¿Quieres más información?</h2>
+                <div class="not-mobile">
+                    <p>Dejanos tu mail y te mantendremos al tanto del lanzamiento</p>
+                    <form action="">
+                        <label for="fmail">Email</label>
+                        <input type="text" id="fmail" name="fmail" placeholder="Deja tu mail a hermes">
+                        <input type="submit" class="button-kleo" value="Quiero estar actualizado">
+                    </form>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
-    <section class="third container-sc">
-        <h2>Creemos en la información libre. Por eso lanzamos KLEO, para que nadie pueda hacer uso de ella para sus propios fines. ¿Quieres más información?</h2>
-        <div class="not-mobile">
-            <p></p>
-            <form action="get">
-
-            </form>
-        </div>
-    </section>
-    <footer class="not-mobile container-sc">
+    <footer class="not-mobile">
         <p>Hermes es el mensajero</p>
     </footer>
 </body>

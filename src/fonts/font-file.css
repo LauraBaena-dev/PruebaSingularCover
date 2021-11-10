@@ -24,6 +24,18 @@
 }
 @font-face {
   font-family: 'Manrope';
+  src: url('Manrope-Medium.eot');
+  src: url('Manrope-Medium.eot?#iefix') format('embedded-opentype'),
+      url('Manrope-Medium.woff2') format('woff2'),
+      url('Manrope-Medium.woff') format('woff'),
+      url('Manrope-Medium.ttf') format('truetype'),
+      url('Manrope-Medium.svg#Manrope-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
   src: url('Manrope-SemiBold.eot');
   src: url('Manrope-SemiBold.eot?#iefix') format('embedded-opentype'),
       url('Manrope-SemiBold.woff2') format('woff2'),
