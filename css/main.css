@@ -544,56 +544,52 @@ section.third .bg h2 {
     padding-left: 54px;
     padding-right: 33px;
     padding-top: 31px;
-    /*.abc-logo{
-        top: -18px;
-        left: 4px;
-    }*/
+    width: auto;
+    height: 100%;
   }
   header .row .col-image .papers .logos .p-absolute {
     top: auto;
     left: auto;
     display: inline-block;
   }
+  header .row .col-image .papers .logos .abc-logo {
+    left: 6%;
+  }
   header .row .col-image .papers .logos .pais-logo {
-    margin: 0px 60px;
     top: 35px;
-    left: 106px;
+    left: 29%;
   }
   header .row .col-image .papers .logos .confidencial-logo {
     top: 18px;
-    left: 305px;
+    left: 57%;
   }
   header .row .col-image .papers .logos .vanguardia-logo {
     top: 106px;
-    left: 40px;
+    left: 0%;
   }
   header .row .col-image .papers .logos .razon-logo {
     top: 98px;
-    left: 418px;
+    left: 71%;
   }
   header .row .col-image .papers .logos .mundo-logo {
     top: 99px;
-    left: 213px;
-    margin-left: 17px;
-    margin-right: 72px;
+    left: 38%;
   }
   header .row .col-image .papers .logos .minutos-logo {
-    margin-left: 49px;
     top: 180px;
-    left: 89px;
+    left: 19%;
   }
   header .row .col-image .papers .logos .marca-logo {
-    margin-left: 70px;
-    margin-right: 40px;
     top: 182px;
-    left: 254px;
+    left: 57%;
   }
   header .row .col-image .papers .logos .expansion-logo {
     top: 184px;
-    left: 430px;
+    left: 73%;
   }
   header .row .col-image .papers .logos .as-logo {
-    top: 185px;
+    left: 7%;
+    top: 21%;
   }
   header .row .col-image .papers picture {
     display: flex;
@@ -601,7 +597,7 @@ section.third .bg h2 {
     justify-content: flex-start;
   }
   header .row .col-image .papers picture img {
-    width: auto;
+    max-width: fit-content;
   }
 
   section.first {
@@ -644,7 +640,7 @@ section.third .bg h2 {
   section.first .first-row .logos .razon-logo {
     bottom: 49%;
     right: unset;
-    left: 393px;
+    left: 81%;
     padding: 26px 15px;
   }
   section.first .first-row .logos .abc-logo {
@@ -657,7 +653,7 @@ section.third .bg h2 {
     bottom: 33%;
   }
   section.first .first-row .logos .mundo-logo {
-    left: 443px;
+    left: 92%;
     bottom: 30%;
     padding: 27px 7px;
   }
@@ -668,7 +664,7 @@ section.third .bg h2 {
   section.first .first-row .logos .confidencial-logo {
     padding: 25px 9px;
     bottom: 14%;
-    left: 413px;
+    left: 87%;
   }
   section.first .second-row {
     padding-top: 100px;

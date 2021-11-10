@@ -542,7 +542,6 @@ section.third {
             height: calc(100% + 1px);
             background-color: $black;
         }
-        
         .row{
             display: grid;
             justify-content: center;
@@ -582,55 +581,52 @@ section.third {
                         padding-left: 54px;
                         padding-right: 33px;
                         padding-top: 31px;
+                        width: auto;
+                        height: 100%;
                         .p-absolute{
                             //position: relative;
                             top: auto;
                             left: auto;
                             display: inline-block;
-                        }/*.abc-logo{
-                            top: -18px;
-                            left: 4px;
-                        }*/
+                        }
+                        .abc-logo{
+                            left: 6%;
+                        }
                         .pais-logo{
-                            margin: 0px 60px;
                             top: 35px;
-                            left: 106px;
+                            left: 29%;
                         }
                         .confidencial-logo{
                             top: 18px;
-                            left: 305px;
+                            left: 57%;
                         }
                         .vanguardia-logo{
                             top: 106px;
-                            left: 40px;
+                            left: 0%;
                         }
                         .razon-logo{
                             top: 98px;
-                            left: 418px;
+                            left: 71%;
                         }
                         .mundo-logo{
                             top: 99px;
-                            left: 213px;
-                            margin-left: 17px;
-                            margin-right: 72px;
+                            left: 38%;
                         }
                         .minutos-logo{
-                            margin-left: 49px;
                             top: 180px;
-                            left: 89px;
+                            left: 19%;
                         }
                         .marca-logo{
-                            margin-left: 70px;
-                            margin-right: 40px;
                             top: 182px;
-                            left: 254px;
+                            left: 57%;
                         }
                         .expansion-logo{
                             top: 184px;
-                            left: 430px;
+                            left: 73%;
                         }
                         .as-logo{
-                            top: 185px;
+                            left: 7%;
+                            top: 21%;
                         }
                     }
                     picture{
@@ -638,7 +634,7 @@ section.third {
                         align-items: flex-end;
                         justify-content: flex-start;
                         img{
-                            width: auto;
+                            max-width: fit-content;
                         }
                     }
                 }
@@ -689,7 +685,7 @@ section.third {
                 .razon-logo{
                     bottom: 49%;
                     right: unset;
-                    left: 393px;
+                    left: 81%;
                     padding: 26px 15px;
                 }
                 .abc-logo{
@@ -702,7 +698,7 @@ section.third {
                     bottom: 33%;
                 }
                 .mundo-logo{
-                    left: 443px;
+                    left: 92%;
                     bottom: 30%;
                     padding: 27px 7px;
                 }
@@ -713,7 +709,7 @@ section.third {
                 .confidencial-logo{
                     padding: 25px 9px;
                     bottom: 14%;
-                    left: 413px;
+                    left: 87%;
                 }
             }
         }
