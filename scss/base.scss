@@ -787,7 +787,7 @@ section.third {
                     }
                 }
                 //animacio JS
-                animation: slider 30s infinite linear;
+                animation: slider 20s infinite linear;
                 @keyframes slider {
                     0% { transform: translateX(0%); }
                     100% { transform: translateX(-50%); }

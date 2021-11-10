@@ -722,7 +722,7 @@ section.third .bg h2 {
     grid-template-columns: repeat(10, minmax(0, 110px));
     grid-gap: 14px;
     display: flex;
-    animation: slider 30s infinite linear;
+    animation: slider 20s infinite linear;
   }
   section.first .third-row .col-list .list-item {
     max-width: calc(110px - 18px);
