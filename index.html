@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html lang="es">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>KLEO Singular Cover</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1 user-scalable=no'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <script src="src/js/jquery.js"></script>
     <script src="src/js/slick.min.js"></script>
@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col col-info">
                 <nav class="menu">
-                    <ul class="main-menu">
+                    <ol class="main-menu">
                         <li>
                             <h1 class="title-header">
                                 <a href="#" class="logo">KLEO</a>
@@ -27,16 +27,16 @@
                         <li class="not-mobile"><a href="#categorias">Categorias</a></li>
                         <li class="not-mobile"><a href="#suscripcion">Suscripcion</a></li>
                         <li><a href="#" class="button-kleo">Me interesa</a></li> <!--no se donde deberia llevar-->
-                    </ul>
+                    </ol>
                 </nav>
                 <h2 class="big-title">Existe una mejor manera de estar informado</h2>
                 <p class="subtitle">Accede a todos los puntos de vista sobre las últimas noticias,de un solo vistazo</p>
-                <ul class="list-header">
+                <ol class="list-header">
                     <li><span class="icon-file"></span>Titulares de los periódicos referentes nacional inter</li>
                     <li><span class="icon-image"></span>Información relacionada en redes sociales</li>
                     <li><span class="icon-star"></span>Publicaciones especializadas</li>
                     <li><span class="icon-search"></span>Reportajes de investigación KLEO</li>
-                </ul>
+                </ol>
             </div>
             <div class="col col-image">
                 <div class="papers">
@@ -107,7 +107,7 @@
                 <div class="col-img">
                     <picture>
                         <source media="(min-width:1024px)" srcset="images/firstimage-secondsection-kleo.png">
-                        <img src="images/firstimage-secondsection-sm-kleo.png" alt="mobileKLEO" class="mobile">
+                        <img src="images/firstimage-secondsection-sm-kleo.png" alt="FirstMobileKLEO" class="mobile">
                     </picture>
                     <div class="logos">
                         <picture class="razon-logo p-absolute box">
@@ -145,7 +145,7 @@
                 <div class="col-img">
                     <picture>
                         <source media="(min-width:1024px)" srcset="images/secondimage-secondsection-kleo.png">
-                        <img src="images/secondimage-secondsection-sm-kleo.png" alt="mobileKLEO" class="mobile">
+                        <img src="images/secondimage-secondsection-sm-kleo.png" alt="SecondMobileKLEO" class="mobile">
                     </picture>
                     <div class="logos">
                         <picture class="twitter-logo p-absolute box">
@@ -264,7 +264,8 @@
                     </div>
                     <div class="list-item box">
                         <div class="list-item-title">
-                            <span class="icon-cinema"></span>
+                            <!--<span class="icon-cinema"></span>-->
+                            <span><img src="images/cine-kleo.jpg" alt="CineIcon"></span>
                             <h3>Cine</h3>
                         </div>
                         <div class="list-content not-mobile">
@@ -313,11 +314,11 @@
                         <h3>Gratuito</h3>
                         <p class="not-mobile">Accede gratuitamente a la información relevante sobre lo que está ocurriendo.</p>
                         <p class="price"><span>0€</span>al mes</p>
-                        <ul>
+                        <ol>
                             <li><p>Accede a <span>3 medios informativos</span></p></li>
                             <li><p>Lee los <span>50 tuits mas relevantes</span></p></li>
                             <li><p>Visualiza <span>50 imágenes y vídeos relacionados</span></p></li>
-                        </ul>
+                        </ol>
                     </div>
                     <div class="to-bottom">
                         <a href="#" class="button-kleo">
@@ -331,13 +332,13 @@
                         <h3>Premium</h3>
                         <p class="not-mobile">Accede a toda la información relevante, contenido digital y de actualidad en RRSS.</p>
                         <p class="price"><span>2,99€</span>al mes</p>
-                        <ul>
+                        <ol>
                             <li><p>Accede a <span>todos los medios informativos</span></p></li>
                             <li><p>Lee <span>todos los tuits relacionados</span></p></li>
                             <li><p>Visualiza <span>todas imágenes  y vídeos relacionados</span></p></li>
                             <li><p>Accede a <span>medios especializados:</span> fitness,  viajes,  gastronomía, etc</p></li>
                             <li><p>Disfruta de <span>artículos en detalle</span></p></li>
-                        </ul>
+                        </ol>
                     </div>
                     <div class="to-bottom">
                         <a href="#" class="button-kleo">
@@ -353,7 +354,7 @@
                 <h2>Creemos en la información libre. Por eso lanzamos KLEO, para que nadie pueda hacer uso de ella para sus propios fines. ¿Quieres más información?</h2>
                 <div class="not-mobile">
                     <p>Dejanos tu mail y te mantendremos al tanto del lanzamiento</p>
-                    <form action="">
+                    <form action="#" method="get">
                         <label for="fmail">Email</label>
                         <input type="text" id="fmail" name="fmail" placeholder="Deja tu mail a hermes">
                         <input type="submit" class="button-kleo" value="Quiero estar actualizado">

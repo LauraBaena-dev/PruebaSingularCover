@@ -108,7 +108,7 @@ h1,h2,h3{
 
 //HEADER
 header{
-    ul{
+    ol{
         list-style: none;
         padding: 0px;
         margin: 0px;
@@ -381,7 +381,7 @@ section.second{
                 }
                 color: rgba($white, 0.6);
             }
-            ul{
+            ol{
                 margin-top: 8px;
                 padding-top: 6px;
                 margin-bottom: 24px;
@@ -427,7 +427,7 @@ section.second{
             }
             &:hover{
                 border: 1px solid $blue;
-                ul{
+                ol{
                     border-top: 1px solid $blue;
                 }
             }
@@ -837,7 +837,7 @@ section.third {
                         margin-right: 10px;
                     }
                 }
-                ul{
+                ol{
                     margin-top: 0px;
                     padding-top: 20px;
                     margin-bottom: 11px;

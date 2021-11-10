@@ -73,7 +73,7 @@ h1, h2, h3 {
   box-shadow: 0px 8px 14px rgba(0, 99, 245, 0.2);
 }
 
-header ul {
+header ol {
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -338,7 +338,7 @@ section.second .plans .plan .price span {
   display: block;
   color: #FFFFFF;
 }
-section.second .plans .plan ul {
+section.second .plans .plan ol {
   margin-top: 8px;
   padding-top: 6px;
   margin-bottom: 24px;
@@ -350,7 +350,7 @@ section.second .plans .plan ul {
   list-style-position: inside;
   transition: all 0.3s linear;
 }
-section.second .plans .plan ul li {
+section.second .plans .plan ol li {
   /*&::marker{
       color: $blue;
       margin-right: 6px;
@@ -362,10 +362,10 @@ section.second .plans .plan ul li {
   position: relative;
   margin-left: 12px;
 }
-section.second .plans .plan ul li span {
+section.second .plans .plan ol li span {
   color: #FFFFFF;
 }
-section.second .plans .plan ul li:before {
+section.second .plans .plan ol li:before {
   position: absolute;
   content: "";
   display: block;
@@ -375,7 +375,7 @@ section.second .plans .plan ul li:before {
   top: 6px;
   left: -12px;
 }
-section.second .plans .plan ul li p {
+section.second .plans .plan ol li p {
   margin: 0px;
 }
 section.second .plans .plan .button-kleo {
@@ -385,7 +385,7 @@ section.second .plans .plan .button-kleo {
 section.second .plans .plan:hover {
   border: 1px solid #0063F5;
 }
-section.second .plans .plan:hover ul {
+section.second .plans .plan:hover ol {
   border-top: 1px solid #0063F5;
 }
 
@@ -794,7 +794,7 @@ section.third .bg h2 {
     display: inline-block;
     margin-right: 10px;
   }
-  section.second .plans .plan ul {
+  section.second .plans .plan ol {
     margin-top: 0px;
     padding-top: 20px;
     margin-bottom: 11px;
