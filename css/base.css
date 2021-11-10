@@ -1,0 +1,15 @@
+body {
+  font-family: "Manrope";
+  padding: 40px 105px;
+  padding-bottom: 50px;
+  background-color: #000000;
+}
+
+.logo {
+  text-indent: -99999px;
+  width: 96px;
+  height: 27px;
+  background-repeat: no-repeat;
+  background-image: url("../images/logo-kleo.png");
+  display: block;
+}

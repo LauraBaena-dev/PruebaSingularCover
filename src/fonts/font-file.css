@@ -22,6 +22,18 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+  font-family: 'Manrope';
+  src: url('Manrope-Bold.eot');
+  src: url('Manrope-Bold.eot?#iefix') format('embedded-opentype'),
+      url('Manrope-Bold.woff2') format('woff2'),
+      url('Manrope-Bold.woff') format('woff'),
+      url('Manrope-Bold.ttf') format('truetype'),
+      url('Manrope-Bold.svg#Manrope-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 /*ICONS*/
 @font-face {
   font-family: 'singularCovers';

@@ -1,0 +1,506 @@
+////// FONTS //////
+
+$font-standard: 'Manrope';
+$font-special: 'Lora';
+
+////// SIZES //////
+$font-desktop: 24px;
+$font-mobile: 16px;
+$font-subtitle-normal: 28px;
+$font-subtitle-mobile: 20px;
+$font-bigtitle-normal: 68px;
+$font-bigtitle-mobile: 40px;
+$font-smalltitle-normal: 60px;
+$font-smalltitle-mobile: 28px;
+$font-links-normal: 16px;
+$font-links-mobile: 14px;
+$font-h3-normal:36px;
+$font-h3-mobile: 24px;
+$font-titleform-normal: 36px;
+$font-titleform-mobile: 32px;
+
+$font-normal: 400;
+$font-bold: 700;
+
+////// COLORS //////
+
+$black:#000000;
+$black2:#020202;
+$black-icons: #231F20;
+$grey-boxes: #303030;
+$white:#FFFFFF;
+$grey:#E5E5E5;
+$blue:#0063F5;
+
+//GENERAL
+body{
+    font-size: $font-mobile;
+    font-family: $font-standard;
+    padding: 0px;
+    padding-top: 40px;
+    padding-bottom: 22px;
+    background-color: $black;
+    font-weight: $font-normal;
+    margin: 0px;
+    color: $white;
+    line-height: 22px;
+}
+.not-mobile{
+    display: none;
+}
+.in-mobile{
+    display: block;
+}
+h1,h2,h3{
+    font-family: $font-special;
+    font-weight: $font-normal;
+    margin-bottom: 0px;
+}
+.big-title{
+    font-size: $font-bigtitle-mobile;
+    line-height: 51px;
+}
+.subtitle{
+    font-size: $font-subtitle-mobile;
+    line-height: 27px;
+    opacity: 0.6;
+    margin-bottom: 0px;
+}
+.title{
+    font-size: $font-smalltitle-mobile;
+    line-height: 36px;
+}
+.box{
+    background: $white;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+}
+
+//BUTTONS
+.button-kleo{
+    padding: 12px 30px;
+    background-color: transparent;
+    font-size: $font-links-normal;
+    font-weight: $font-bold;
+    text-decoration: none;
+    color: $white;
+    transition: 0.3s all linear;
+    border: 1px solid $white;
+    display: block;
+    text-align: center;
+    &:hover{
+        border: 1px solid transparent;
+        background-color: $blue;
+        box-shadow: 0px 8px 14px rgba(0, 99, 245, 0.2);
+    }
+}
+
+//HEADER
+header{
+    ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    .col-info{
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 24px;
+        .main-menu{
+            font-size: $font-links-mobile;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            li{
+                height: fit-content;
+            }
+        }
+        .list-header{
+            margin-top: 32px;
+            span{
+                color: $blue;
+                margin-right: 12px;
+            }
+            li{
+                margin-bottom: 12px;
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        .logo {
+            text-indent:-99999px;
+            width: 96px;
+            height: 27px;
+            background-repeat: no-repeat;
+            background-image: url('../images/logo-kleo.png');
+            display: block;
+        }
+    }
+    .col-image{
+        background-color: $white;
+        .papers{
+            padding-top: 36px;
+            position: relative;
+            .logos{
+                .p-absolute{
+                    position: absolute;
+                    display: block;
+                }
+                .minutos-logo{
+                    top: 10%;
+                    left: 5%;
+                }
+                .abc-logo{
+                    top: 23%;
+                    left: 11%;
+                }
+                .pais-logo{
+                    top: 3%;
+                    left: 23%;
+                }
+                .confidencial-logo{
+                    top: 2%;
+                    left: 52%;
+                }
+                .as-logo{
+                    top: 31%;
+                    left: 8%;
+                }
+                .mundo-logo{
+                    top: 10%;
+                    left: 37%;
+                }
+                .razon-logo{
+                    top: 9%;
+                    left: 75%;
+                }
+                .vanguardia-logo{
+                    top: 15%;
+                    left: 18%;
+                }
+                .marca-logo{
+                    top: 19%;
+                    left: 59%;
+                }
+                .expansion-logo{  
+                    top: 19%;
+                    left: 76%;
+                }
+            }
+            .mobile{
+                width: 100%;
+            }
+        }
+    }
+}
+section.first{
+    background-color: $white;
+    color: $black2;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 61px;
+    .first-row, .second-row, .third-row{
+        .mobile{
+            border-radius: 45px;
+            border: 6px solid $black2;
+        }
+        .col-img{
+            display: flex;
+            justify-content: center; 
+            flex-direction: row;
+            position: relative;
+            max-width: 375px;
+            margin: auto;
+            img{
+                max-width: 70vw;
+            }
+        } 
+        .title{
+            margin-bottom: 12px;
+            & ~ p{
+                opacity: 0.6;
+                margin-bottom: 20px;
+            }
+        }
+        .box{
+            padding: 18px 6px;
+            border-radius: 20px;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.14);
+        }
+        .p-absolute{
+            position: absolute;
+            display: block;
+        }
+    }
+    .first-row{
+        padding-bottom: 187px; 
+        .logos{
+            .pais-logo{
+                bottom: -22%;
+                left: 44%;
+                padding: 27px 5px;
+            }
+            .razon-logo{
+                bottom: 18%;
+                right: 0px;
+            }
+            .abc-logo{
+                bottom: 12%;
+                left: 4%;
+            }
+            .mundo-logo{
+                bottom: -8%;
+                left: 13%;
+                padding: 32px 7px;
+            }
+            .confidencial-logo{
+                bottom: -26%;
+                left: 8%;
+                padding: 25px 6px;
+            }
+            .vanguardia-logo{
+                right: 4%;
+                bottom: -5%;
+            }
+        }
+    }
+    .second-row{
+        padding-bottom: 173px;
+        .logos{
+            .youtube-logo{
+                padding: 7px 19px;
+                bottom: -23%;
+                left: 11%;
+            }
+            .twitter-logo{
+                bottom: -5%;
+                left: 33%;
+                padding: 18px 13px;
+            }
+            .instagram-logo{
+                bottom: -12%;
+                right: 5%;
+                padding: 17px 28px;
+            }
+        }
+    }
+    .third-row{
+        padding-bottom: 32px;
+        .box{
+            padding: 16px 12px;
+            box-shadow: 0px 0px 16px rgb(0 0 0 / 8%);
+            border-radius: 12px;
+        }
+        .col-list{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            .list-item{
+                width: calc(50% - 30px);
+                margin-left: 0px;
+                margin-right: 6px;
+                margin-bottom: 12px;
+                &:nth-of-type(even){
+                    margin-left: 6px;
+                    margin-right: 0px;
+                }
+                .list-item-title{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    span{
+                        color: $black-icons;
+                        padding-right: 11px;
+                        font-size: 23px;
+                    }
+                    h3{
+                        margin: 0px;
+                        font-family: $font-standard;
+                        color: $black2;
+                        font-size: $font-mobile;
+                    }
+                }
+            }
+        }
+    }
+}
+section.second{
+    padding-top: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+    .title{
+        margin-bottom: 12px;
+        & ~ p{
+            opacity: 0.6;
+            margin-bottom: 24px;
+        }
+    }
+    .plans{
+        display: flex;
+        flex-direction: row;
+        .plan{
+            border: 1px solid $grey-boxes;
+            box-sizing: border-box; 
+            margin-right: 7px;
+            margin-left: 0px;
+            width: calc(50% - 7px);
+            transition: all 0.3s linear;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &:nth-of-type(even){
+                margin-left: 7px;
+                margin-right: 0px;
+            }
+            padding: 16px 12px;
+            h3{
+                font-weight: $font-bold;
+                margin-bottom: 12px;
+                font-size: $font-h3-mobile;
+            }
+            .price{
+                span{
+                    font-size: 52px;
+                    font-family: $font-special;
+                    font-weight: $font-bold;
+                    line-height: 67px;
+                    display: block;
+                    color: $white;
+                }
+                color: rgba($white, 0.6);
+            }
+            ul{
+                margin-top: 8px;
+                padding-top: 6px;
+                margin-bottom: 24px;
+                border-top: 1px solid $grey-boxes;
+                list-style: square;
+                padding-left: 0px;
+                font-size: $font-links-mobile;
+                line-height: 19px;
+                list-style-position: inside;
+                transition: all 0.3s linear;
+                li{
+                    /*&::marker{
+                        color: $blue;
+                        margin-right: 6px;
+                    }*/
+                    span{
+                        color: $white;
+                    }
+                    color: rgba($white, 0.6);
+                    margin-bottom: 12px;
+                    display: flex;
+                    flex-direction: row;
+                    position: relative;
+                    margin-left: 12px;
+                    &:before{ //con el elemento marker no me deja tocar el margin que tiene por defecto
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        background-color: $blue;
+                        width: 6px;
+                        height: 6px;
+                        top: 6px;
+                        left: -12px;
+                    }
+                    p{
+                        margin: 0px;
+                    }
+                }
+            }
+            .button-kleo{
+                font-size: $font-links-mobile;
+                padding: 13px;
+            }
+            &:hover{
+                border: 1px solid $blue;
+                ul{
+                    border-top: 1px solid $blue;
+                }
+            }
+        }
+    }
+}
+section.third{
+    background-color: $blue;
+    margin-left: 16px;
+    margin-right: 32px;
+    margin-top: 141px;
+    padding: 49px 16px;
+    position: relative;
+    &::before{
+        position: absolute;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/lastsection-mobile-kleo.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.4;
+        top: 0px;
+        left: 0px;
+    }
+    &::after{
+        position: absolute;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 6px;
+        left: 6px;
+        border: 1px solid $blue;
+        z-index: -1;
+    }
+    h2{
+        font-size: $font-titleform-mobile;
+        line-height: 44px;
+        width: 69vw;
+        margin-top: 0px;
+    }
+}
+
+//MEDIAS
+@media (min-width:1024px){
+    //GENERAL
+    body{
+        font-size: $font-desktop;
+    }
+    .container-sc{
+        max-width: 1440px;
+        margin: auto;
+    }
+    .title-header{
+        margin: 0px;
+    }
+    .big-title{
+        font-size: $font-bigtitle-normal;
+        margin-top: 50px;
+    }
+    .title{
+        font-size: $font-smalltitle-normal;
+        margin-top: 0px;
+    }
+    .subtitle{
+        font-size: $font-subtitle-normal;
+        line-height: 42px;
+    }
+    .not-mobile{
+        display: block;
+    }
+    .in-mobile{
+        display: none;
+    }
+
+    //HEADER
+    header{
+        .list-header{
+            margin-top: 24px;
+        }
+    }
+}
