@@ -156,6 +156,8 @@ header{
         .papers{
             padding-top: 36px;
             position: relative;
+            max-width: 425px;
+            margin: auto;
             .logos{
                 .p-absolute{
                     position: absolute;
@@ -285,17 +287,17 @@ section.first{
         .logos{
             .youtube-logo{
                 padding: 7px 19px;
-                bottom: -23%;
-                left: 11%;
+                bottom: -19%;
+                left: 13%;
             }
             .twitter-logo{
-                bottom: -5%;
+                bottom: -2%;
                 left: 33%;
                 padding: 18px 13px;
             }
             .instagram-logo{
-                bottom: -12%;
-                right: 5%;
+                bottom: -11%;
+                right: 9%;
                 padding: 17px 28px;
             }
         }
@@ -313,7 +315,7 @@ section.first{
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 12px;
             .list-item{
-                margin-bottom: 12px;
+                //margin-bottom: 12px;
                 .list-item-title{
                     display: flex;
                     flex-direction: row;
@@ -478,6 +480,17 @@ section.third {
 
 //MEDIAS 
 //1440px up todo OK
+@media (min-width: 769px){  
+    section.first .first-row, section.first .second-row, section.first .third-row{
+        text-align: center;
+    }
+    section.second{
+        text-align: center;
+        .plans{
+            text-align: start;
+        }
+    }
+}
 @media (min-width:1024px){
     //GENERAL
     body{
@@ -515,7 +528,6 @@ section.third {
     .in-mobile{
         display: none;
     }
-
     //HEADER
     header{
         position: relative;
@@ -538,7 +550,7 @@ section.third {
             grid-gap: 0px;
             .col-info{
                 grid-column: span 8;
-                padding-left: 106px;
+                padding-left: $lateral-desktop;
                 padding-right: 24px;
                 padding-bottom: 148px;
                 padding-top: 0px;
@@ -546,18 +558,8 @@ section.third {
                 background-color: $black;
                 .main-menu{
                     margin-top: 31px;
-                    .not-mobile a{
-                        text-decoration: none;
-                        color: $white;
-                        font-size: $font-links-normal;
-                        font-weight: $font-semibold;
-                        opacity: 0.5;
-                        transition: all 0.3s linear;
-                        &:hover, &:active{
-                            color: $blue;
-                            opacity: 1;
-                            cursor: pointer;
-                        }
+                    .not-mobile{
+                        display: none;
                     }
                 }
                 .list-header{
@@ -575,46 +577,60 @@ section.third {
                     flex-direction: column;
                     justify-content: space-between;
                     padding-top: 0px;
+                    max-width: none;
                     .logos{
                         padding-left: 54px;
                         padding-right: 33px;
                         padding-top: 31px;
                         .p-absolute{
-                            position: relative;
+                            //position: relative;
                             top: auto;
                             left: auto;
                             display: inline-block;
-                        }.abc-logo{
+                        }/*.abc-logo{
                             top: -18px;
                             left: 4px;
-                        }
+                        }*/
                         .pais-logo{
                             margin: 0px 60px;
-                            top: -15px;
+                            top: 35px;
+                            left: 106px;
                         }
                         .confidencial-logo{
-                            top: -16px;
+                            top: 18px;
+                            left: 305px;
                         }
                         .vanguardia-logo{
-                            top: 7px;
-                            left: -23px;
+                            top: 106px;
+                            left: 40px;
+                        }
+                        .razon-logo{
+                            top: 98px;
+                            left: 418px;
                         }
                         .mundo-logo{
-                            top: -15px;
+                            top: 99px;
+                            left: 213px;
                             margin-left: 17px;
                             margin-right: 72px;
                         }
                         .minutos-logo{
                             margin-left: 49px;
-                            top: -14px;
+                            top: 180px;
+                            left: 89px;
                         }
                         .marca-logo{
                             margin-left: 70px;
                             margin-right: 40px;
-                            top: -14px;
+                            top: 182px;
+                            left: 254px;
                         }
                         .expansion-logo{
-                            top: 34px;
+                            top: 184px;
+                            left: 430px;
+                        }
+                        .as-logo{
+                            top: 185px;
                         }
                     }
                     picture{
@@ -628,14 +644,17 @@ section.third {
                 }
             }
         }
-        
     }
     //SECTIONS
     section.first{
         position: relative;
         padding-top:0px;
-        padding-left: $lateral-desktop;
-        padding-right: $lateral-desktop;
+        padding-left: 0px;
+        padding-right: 0px;
+        .content{
+            padding-left: $lateral-desktop;
+            padding-right: $lateral-desktop;
+        }
         .first-row, .second-row, .third-row{
             .title{
                 margin-bottom: 0px;
@@ -646,6 +665,7 @@ section.third {
             justify-content: center;
             grid-template-columns: repeat(13, 1fr);
             grid-gap: 0px;
+            text-align: start;
         }
         .first-row{
             padding-top: 120px;
@@ -667,9 +687,10 @@ section.third {
             }
             .logos{
                 .razon-logo{
-                    bottom: 48%;
+                    bottom: 49%;
                     right: unset;
-                    left: 347px;
+                    left: 393px;
+                    padding: 26px 15px;
                 }
                 .abc-logo{
                     bottom: 14%;
@@ -681,8 +702,8 @@ section.third {
                     bottom: 33%;
                 }
                 .mundo-logo{
-                    left: 393px;
-                    bottom: 27%;
+                    left: 443px;
+                    bottom: 30%;
                     padding: 27px 7px;
                 }
                 .pais-logo{
@@ -690,9 +711,9 @@ section.third {
                     left: 0%;
                 }
                 .confidencial-logo{
-                    padding: 22px 9px;
-                    bottom: 9%;
-                    left: 364px;
+                    padding: 25px 9px;
+                    bottom: 14%;
+                    left: 413px;
                 }
             }
         }
@@ -734,7 +755,6 @@ section.third {
             }
         }
         .third-row{
-            text-align: center;
             padding-top: 160px;
             padding-bottom: 141px;
             overflow: hidden;
@@ -771,7 +791,7 @@ section.third {
                     }
                 }
                 //animacio JS
-                animation: slider 10s infinite linear;
+                animation: slider 30s infinite linear;
                 @keyframes slider {
                     0% { transform: translateX(0%); }
                     100% { transform: translateX(-50%); }
@@ -783,7 +803,6 @@ section.third {
         padding-top: 120px;
         padding-left: $lateral-desktop;
         padding-right: $lateral-desktop;
-        text-align: center;
         .title{
             margin-bottom: 0px;
             & ~ p{
@@ -796,7 +815,6 @@ section.third {
         .plans{
             max-width: 816px;
             margin: auto;
-            text-align: start;
             .plan{
                 padding: 32px 20px;
                 padding-bottom: 24px;
@@ -894,6 +912,7 @@ section.third {
                     .button-kleo{
                         display: inline-block;
                         padding: 14px;
+                        border-color: $blue;
                         &:hover{
                             cursor: pointer;
                         }
@@ -920,6 +939,25 @@ section.third {
             font-size: $font-mobile;
             opacity: 0.6;
             color: $grey;
+        }
+    }
+}
+
+@media (min-width:1440px){
+    header .row .col-info .main-menu li.not-mobile{
+        display: block;
+        a{
+            text-decoration: none;
+            color: $white;
+            font-size: $font-links-normal;
+            font-weight: $font-semibold;
+            opacity: 0.5;
+            transition: all 0.3s linear;
+            &:hover, &:active{
+                color: $blue;
+                opacity: 1;
+                cursor: pointer;
+            }
         }
     }
 }

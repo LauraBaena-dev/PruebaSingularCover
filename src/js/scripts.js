@@ -14,9 +14,9 @@ $(document).ready(function(){
         slider.css('width', 'max-content');
         var w = slider.width();
         if (gallery.matches) {
-            slider.css('width', w+18)
+            slider.css('width', w+18);
         }else{
-
+            slider.css('width', '100%');
         }
     }
 });
