@@ -432,6 +432,8 @@ section.third h2 {
 @media (min-width: 1024px) {
   body {
     font-size: 24px;
+    padding-top: 0px;
+    line-height: 33px;
   }
 
   .container-sc {
@@ -445,17 +447,22 @@ section.third h2 {
 
   .big-title {
     font-size: 68px;
-    margin-top: 50px;
+    margin-top: 52px;
+    line-height: 86px;
+    max-width: 614px;
   }
 
   .title {
-    font-size: 60px;
+    font-size: 52px;
     margin-top: 0px;
+    line-height: 67px;
   }
 
   .subtitle {
     font-size: 28px;
     line-height: 42px;
+    margin-top: 16px;
+    max-width: 514px;
   }
 
   .not-mobile {
@@ -466,7 +473,186 @@ section.third h2 {
     display: none;
   }
 
-  header .list-header {
+  header {
+    position: relative;
+  }
+  header::before {
+    position: absolute;
+    content: "";
+    display: block;
+    z-index: -1;
+    top: 0px;
+    left: 50%;
+    width: 50vw;
+    height: calc(100% + 1px);
+    background-color: #FFFFFF;
+  }
+  header .row {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0px;
+  }
+  header .row .col-info {
+    grid-column: span 7;
+    padding-left: 106px;
+    padding-right: 24px;
+    padding-bottom: 148px;
+    margin-bottom: 0px;
+    background-color: #000000;
+  }
+  header .row .col-info .main-menu {
+    margin-top: 31px;
+  }
+  header .row .col-info .main-menu .not-mobile a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0.5;
+    transition: all 0.3s linear;
+  }
+  header .row .col-info .main-menu .not-mobile a:hover {
+    color: #0063F5;
+    opacity: 1;
+  }
+  header .row .col-info .list-header {
     margin-top: 24px;
+  }
+  header .row .col-info .list-header li {
+    font-size: 18px;
+  }
+  header .row .col-image {
+    grid-column: span 5;
+  }
+  header .row .col-image .papers {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0px;
+  }
+  header .row .col-image .papers .logos {
+    padding-left: 54px;
+    padding-right: 33px;
+    padding-top: 31px;
+  }
+  header .row .col-image .papers .logos .p-absolute {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: inline-block;
+  }
+  header .row .col-image .papers .logos .abc-logo {
+    top: -18px;
+    left: 4px;
+  }
+  header .row .col-image .papers .logos .pais-logo {
+    margin: 0px 60px;
+    top: -15px;
+  }
+  header .row .col-image .papers .logos .confidencial-logo {
+    top: -16px;
+  }
+  header .row .col-image .papers .logos .vanguardia-logo {
+    top: 7px;
+    left: -23px;
+  }
+  header .row .col-image .papers .logos .mundo-logo {
+    top: -15px;
+    margin-left: 17px;
+    margin-right: 72px;
+  }
+  header .row .col-image .papers .logos .minutos-logo {
+    margin-left: 49px;
+    top: -14px;
+  }
+  header .row .col-image .papers .logos .marca-logo {
+    margin-left: 70px;
+    margin-right: 40px;
+    top: -14px;
+  }
+  header .row .col-image .papers .logos .expansion-logo {
+    top: 34px;
+  }
+  header .row .col-image .papers picture {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  header .row .col-image .papers picture img {
+    width: auto;
+  }
+
+  section.first {
+    position: relative;
+    padding-top: 120px;
+    padding-left: 104px;
+    padding-right: 104px;
+  }
+  section.first .first-row .title, section.first .second-row .title, section.first .third-row .title {
+    margin-bottom: 0px;
+  }
+  section.first .first-row, section.first .second-row {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(13, 1fr);
+    grid-gap: 0px;
+  }
+  section.first .first-row {
+    padding-bottom: 100px;
+  }
+  section.first .first-row .title ~ p {
+    max-width: 504px;
+  }
+  section.first .first-row .col-text {
+    grid-column: span 7;
+  }
+  section.first .first-row .col-img {
+    grid-column: span 6;
+  }
+  section.first .second-row {
+    padding-bottom: 160px;
+  }
+  section.first .second-row .col-text {
+    grid-column: span 6;
+    order: 2;
+  }
+  section.first .second-row .col-text .title {
+    max-width: 520px;
+  }
+  section.first .second-row .col-text .title ~ p {
+    max-width: 443px;
+  }
+  section.first .second-row .col-img {
+    grid-column: span 7;
+    order: 1;
+  }
+  section.first .third-row {
+    text-align: center;
+  }
+  section.first .third-row .title {
+    max-width: 640px;
+    margin: auto;
+  }
+  section.first .third-row .title ~ p {
+    margin-bottom: 78px;
+  }
+  section.first .third-row .col-list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 14px;
+  }
+  section.first .third-row .col-list .list-item {
+    grid-column: span 1;
+    margin: 0px;
+    width: auto;
+  }
+  section.first .third-row .col-list .list-item .list-item-title {
+    display: inline-block;
+  }
+  section.first .third-row .col-list .list-item .list-item-title span {
+    padding: 0px;
   }
 }

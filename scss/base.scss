@@ -10,7 +10,7 @@ $font-subtitle-normal: 28px;
 $font-subtitle-mobile: 20px;
 $font-bigtitle-normal: 68px;
 $font-bigtitle-mobile: 40px;
-$font-smalltitle-normal: 60px;
+$font-smalltitle-normal: 52px;
 $font-smalltitle-mobile: 28px;
 $font-links-normal: 16px;
 $font-links-mobile: 14px;
@@ -20,6 +20,7 @@ $font-titleform-normal: 36px;
 $font-titleform-mobile: 32px;
 
 $font-normal: 400;
+$font-semibold: 600;
 $font-bold: 700;
 
 ////// COLORS //////
@@ -195,6 +196,7 @@ header{
         }
     }
 }
+//SECTIONS
 section.first{
     background-color: $white;
     color: $black2;
@@ -470,6 +472,8 @@ section.third{
     //GENERAL
     body{
         font-size: $font-desktop;
+        padding-top: 0px;
+        line-height: 33px;
     }
     .container-sc{
         max-width: 1440px;
@@ -480,15 +484,20 @@ section.third{
     }
     .big-title{
         font-size: $font-bigtitle-normal;
-        margin-top: 50px;
+        margin-top: 52px;
+        line-height: 86px;
+        max-width: 614px;
     }
     .title{
         font-size: $font-smalltitle-normal;
         margin-top: 0px;
+        line-height: 67px;
     }
     .subtitle{
         font-size: $font-subtitle-normal;
         line-height: 42px;
+        margin-top: 16px;
+        max-width: 514px;
     }
     .not-mobile{
         display: block;
@@ -499,8 +508,190 @@ section.third{
 
     //HEADER
     header{
-        .list-header{
-            margin-top: 24px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            display: block;
+            z-index: -1;
+            top: 0px;
+            left: 50%;
+            width: 50vw;
+            height: calc(100% + 1px);
+            background-color: $white;
+        }
+        
+        .row{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 0px;
+            .col-info{
+                grid-column: span 7;
+                padding-left: 106px;
+                padding-right: 24px;
+                padding-bottom: 148px;
+                margin-bottom: 0px;
+                background-color: $black;
+                .main-menu{
+                    margin-top: 31px;
+                    .not-mobile a{
+                        text-decoration: none;
+                        color: $white;
+                        font-size: $font-links-normal;
+                        font-weight: $font-semibold;
+                        opacity: 0.5;
+                        transition: all 0.3s linear;
+                        &:hover{
+                            color: $blue;
+                            opacity: 1;
+                        }
+                    }
+                }
+                .list-header{
+                    margin-top: 24px;
+                    li{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .col-image{
+                grid-column: span 5;
+                .papers{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding-top: 0px;
+                    .logos{
+                        padding-left: 54px;
+                        padding-right: 33px;
+                        padding-top: 31px;
+                        .p-absolute{
+                            position: relative;
+                            top: auto;
+                            left: auto;
+                            display: inline-block;
+                        }.abc-logo{
+                            top: -18px;
+                            left: 4px;
+                        }
+                        .pais-logo{
+                            margin: 0px 60px;
+                            top: -15px;
+                        }
+                        .confidencial-logo{
+                            top: -16px;
+                        }
+                        .vanguardia-logo{
+                            top: 7px;
+                            left: -23px;
+                        }
+                        .mundo-logo{
+                            top: -15px;
+                            margin-left: 17px;
+                            margin-right: 72px;
+                        }
+                        .minutos-logo{
+                            margin-left: 49px;
+                            top: -14px;
+                        }
+                        .marca-logo{
+                            margin-left: 70px;
+                            margin-right: 40px;
+                            top: -14px;
+                        }
+                        .expansion-logo{
+                            top: 34px;
+                        }
+                    }
+                    picture{
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-start;
+                        img{
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    //SECTIONS
+    section.first{
+        position: relative;
+        padding-top: 120px;
+        padding-left: 104px;
+        padding-right: 104px;
+        .first-row, .second-row, .third-row{
+            .title{
+                margin-bottom: 0px;
+            }
+        }
+        .first-row, .second-row{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(13, 1fr);
+            grid-gap: 0px;
+        }
+        .first-row{
+            padding-bottom: 100px;
+            .title{
+                & ~ p{
+                    max-width: 504px;
+                }
+            }
+            .col-text{
+                grid-column: span 7;
+            }
+            .col-img{
+                grid-column: span 6;
+            }
+        }
+        .second-row{
+            padding-bottom: 160px;
+            .col-text{
+                grid-column: span 6;
+                order: 2;
+                .title{
+                    max-width: 520px;
+                    & ~ p{
+                        max-width: 443px;
+                    }
+                }
+            }
+            .col-img{
+                grid-column: span 7;
+                order: 1;
+            }
+        }
+        .third-row{
+            text-align: center;
+            .title{
+                max-width: 640px;
+                margin: auto;
+                & ~ p{
+                    margin-bottom: 78px;
+                }
+            }
+            .col-list{
+                display: grid;
+                justify-content: center;
+                grid-template-columns: repeat(10, 1fr);
+                grid-gap: 14px;
+                .list-item{
+                    grid-column: span 1;
+                    margin: 0px;
+                    width: auto;
+                    .list-item-title{
+                        display: inline-block;
+                        span{
+                            padding: 0px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
