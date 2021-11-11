@@ -1,4 +1,4 @@
-Landing Page para Singular Covers
+Landing Page para Singular Cover
 
 Punto a punto:
 

@@ -65,12 +65,12 @@
 
 /*ICONS*/
 @font-face {
-  font-family: 'singularCovers';
-  src:  url('singularCovers.eot?c39blp');
-  src:  url('singularCovers.eot?c39blp#iefix') format('embedded-opentype'),
-    url('singularCovers.ttf?c39blp') format('truetype'),
-    url('singularCovers.woff?c39blp') format('woff'),
-    url('singularCovers.svg?c39blp#singularCovers') format('svg');
+  font-family: 'singularCover';
+  src:  url('singularCover.eot?c39blp');
+  src:  url('singularCover.eot?c39blp#iefix') format('embedded-opentype'),
+    url('singularCover.ttf?c39blp') format('truetype'),
+    url('singularCover.woff?c39blp') format('woff'),
+    url('singularCover.svg?c39blp#singularCover') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -78,7 +78,7 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'singularCovers' !important;
+  font-family: 'singularCover' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
