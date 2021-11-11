@@ -1,27 +1,29 @@
 @font-face {
-    font-family: 'Lora';
-    src: url('Lora-Regular.eot');
-    src: url('Lora-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Lora-Regular.woff2') format('woff2'),
-        url('Lora-Regular.woff') format('woff'),
-        url('Lora-Regular.ttf') format('truetype'),
-        url('Lora-Regular.svg#Lora-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Lora';
+  src: url('Lora-Regular.eot');
+  src: url('Lora-Regular.eot?#iefix') format('embedded-opentype'),
+      url('Lora-Regular.woff2') format('woff2'),
+      url('Lora-Regular.woff') format('woff'),
+      url('Lora-Regular.ttf') format('truetype'),
+      url('Lora-Regular.svg#Lora-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'Manrope';
-    src: url('Manrope-Regular.eot');
-    src: url('Manrope-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Manrope-Regular.woff2') format('woff2'),
-        url('Manrope-Regular.woff') format('woff'),
-        url('Manrope-Regular.ttf') format('truetype'),
-        url('Manrope-Regular.svg#Manrope-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Manrope';
+  src: url('Manrope-Regular.eot');
+  src: url('Manrope-Regular.eot?#iefix') format('embedded-opentype'),
+      url('Manrope-Regular.woff2') format('woff2'),
+      url('Manrope-Regular.woff') format('woff'),
+      url('Manrope-Regular.ttf') format('truetype'),
+      url('Manrope-Regular.svg#Manrope-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: 'Manrope';
   src: url('Manrope-Medium.eot');
@@ -34,6 +36,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Manrope';
   src: url('Manrope-SemiBold.eot');
@@ -59,6 +62,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 /*ICONS*/
 @font-face {
   font-family: 'singularCovers';

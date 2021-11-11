@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     var gallery = window.matchMedia("(min-width: 1024px)");
     var slider = $('.col-list');
     var sliderInit;
@@ -8,11 +9,13 @@ $(document).ready(function(){
     setTimeout(function() {
         setWidthGallery();
     }, 100);
+
     $(window).resize(function() {
         setTimeout(function() {
             setWidthGallery();
         }, 100)
     });
+
     function setWidthGallery() {
         slider.empty();
         slider.append(sliderInit);
@@ -25,4 +28,5 @@ $(document).ready(function(){
             slider.css('width', '100%');
         }
     }
+    
 });

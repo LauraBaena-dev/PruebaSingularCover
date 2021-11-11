@@ -8,7 +8,7 @@ Tus conocimientos de html, recuerda que aunque todo puede funcionar con un div, 
 
 Tu web no debe soportar versiones viejas de navegadores como Internet Explorer 11. Por lo tanto puedes enfocarte solo en navegadores modernos.
 
--Comprobaciones hechas en Opera, Safari, Chrome y FireFox.
+-Comprobaciones hechas en Opera, Chrome y FireFox.
 
 Aunque no estamos cerrados al uso de frameworks de css como bootstrap, bulma o tailwing, sería ideal que puedas demostrar tus habilidades de maquetación utilizando css puro o utilizar cualquier procesador de css como SCSS.
 
@@ -17,7 +17,7 @@ Aunque no estamos cerrados al uso de frameworks de css como bootstrap, bulma o t
 El maquetado de la web debe ser responsive, recuerda que debe ser mobile first.
 
 -He tratado de adaptar la web en múltiples dispositivos, los más complicados con diferencia han sido aquellos más pequeños que 1440px y más grandes que 768px. He intentado que la información no se solape y quede una web limpia.
-Testing de la web desde desktop, iPad y móvil.
+Testing de la web desde desktop y móvil.
 
 Está permitido cualquier extra como animaciones, carrusel que nos permita ver un mínimo conocimiento de JavaScript o JQuery.
 
@@ -33,5 +33,6 @@ Como he comentado, he tratado de adaptar lo mejor posible la web en vista desde 
 He añadido unos scrolls desde el menú de arriba hacia las secciones que yo he creído que deben apuntar.
 También, he supuesto que los botones azules son en estado hover.
 Por otro lado al crear la fuente propia de la web con los iconos, he tenido problemas con uno en concreto (icono cine). Este está añadido como una img(svg).
+Soy consciente del background del formulario en desktop, no he visto como remediarlo...
 
 
